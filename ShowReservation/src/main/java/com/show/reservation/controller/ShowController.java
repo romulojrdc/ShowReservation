@@ -45,7 +45,7 @@ public class ShowController {
     			 || CommandLineEnum.QUIT.getCommand().equalsIgnoreCase(userInput)) {
     		 exitProgram(userScanner);
          } else {
-        	 String userType = userInput;
+        	 String userType = userInput.trim();
         	 switch (userType) {
         	 case "1" :
         		 System.out.println(StringConstant.SELECTED_ADMIN_USER);
